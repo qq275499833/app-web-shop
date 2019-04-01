@@ -10,7 +10,7 @@
                 <i class="iconfont icon-More"></i>
             </header>
             <nav-bar></nav-bar>
-            <section class="search-wrap" ref="searchWrap">
+            <section class="search-wrap" ref="searchWrap" style="height:100%;">
                 <list-scroll :scroll-data="categoryData" class="nav-side-wrapper">
                     <ul class="nav-side">
                         
