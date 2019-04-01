@@ -13,6 +13,7 @@
             <section class="search-wrap" ref="searchWrap">
                 <list-scroll :scroll-data="categoryData" class="nav-side-wrapper">
                     <ul class="nav-side">
+                        
                         <li v-for="(item,index) in categoryData" v-text="item.name"
                             :class="{'active' : currentIndex === index}" @click="selectMenu(index)"></li>
                     </ul>
@@ -85,6 +86,7 @@
             //左侧菜单和右侧区域联动
             selectMenu($index) {
                 this.currentIndex = $index
+                
             },
             selectProduct(title){
                 this.$router.push('./product-list?keyword='+title)
